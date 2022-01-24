@@ -23,5 +23,6 @@ public class SortBootsRun {
         while (listIterator.hasPrevious()) {
             System.out.println(listIterator.previous());
         }
+        //*****
     }
 }
