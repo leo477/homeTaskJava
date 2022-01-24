@@ -31,4 +31,4 @@ select * from Employees where  year(dateCome)=2008 and month(dateCome)=2
  --максимальной зарплатой, с ранней и поздней датой прихода на работу и с 
  --количеством сотрудников. Сорировать по количеству сотрудников (по убывающей)
 
- select department_id , max(salary), min(salary), 
+ select department_id , max(salary), min(salary),
