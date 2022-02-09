@@ -9,15 +9,17 @@ public class Student implements Serializable {
     private transient String password;
     private static final long serialVersionUID=1L;
 
-    public Student(String name, int id, String password) {
+    public Student(String nameOfFaculty,String name, int id, String password) {
         this.name = name;
         this.id = id;
         this.password = password;
+        faculty=nameOfFaculty;
     }
 
     @Override
     public String toString() {
         return "Student{" +
+                "faculty='" + faculty + '\'' +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", password='" + password + '\'' +
