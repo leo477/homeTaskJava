@@ -41,6 +41,15 @@ public class FileRunner {
             Date date = new Date(files[i].lastModified());
             System.out.println("\n" + files[i].getPath() + "\t |" + files[i].length() + "\t |" + date);
         }
+
+        File root[] = File.listRoots();
+        if(root!= null){
+            for (int i=0; i< root.length; i++){
+                System.out.printf("\n %s %d from %D free", root[i].getPath(), root[i].getUsableSpace(), root[i].getTotalSpace());
+            }
+        }
+        else
+            System.out.println("There are no roots");
     }
 
 
