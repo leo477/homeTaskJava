@@ -10,7 +10,7 @@ public class FileRunner {
     public static void main(String[] args) {
         File fp = new File("FileTest2.java");
         if(fp.exists()){
-            System.out.println("Name offile:" + fp.getName());
+            System.out.println(fp.getName() + " exist");
             if(fp.isFile()){
                 System.out.println("Path to file:" + fp.getPath());
                 System.out.println("Absolute Path to file:" + fp.getAbsolutePath());
