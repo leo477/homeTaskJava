@@ -7,8 +7,6 @@ public class WriteRunner {
         String pArray[]={"2020", "Java SE 13"};
         File fByte = new File("data\\byte.data");
         File fSymb = new File("data\\symbol.txt");
-        //FileOutputStream fos = null;
-        //FileWriter fw = null;
         try(FileOutputStream fos=new FileOutputStream(fByte);
             FileWriter fw= new FileWriter(fSymb)){
 
