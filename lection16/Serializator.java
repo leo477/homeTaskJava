@@ -30,4 +30,30 @@ public class Serializator {
 
         return flag;
     }
+
+    public Student deserialization(String fileName) throws InvalidObjectException{
+        File fr = new File(fileName);
+        ObjectInputStream istream= null;
+        try{
+            FileInputStream fis= new FileInputStream(fr);
+            istream=new ObjectInputStream(fis);
+            Student st = (Student) istream.readObject();
+            return st;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }finally {
+            try{
+                if(istream!=null){
+                    istream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        throw  new InvalidObjectException("Object doesn't repair!");
+    }
 }
