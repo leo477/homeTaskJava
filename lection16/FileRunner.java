@@ -31,7 +31,7 @@ public class FileRunner {
             e.printStackTrace();
         }
 
-        File dir = new File("com" +File.separator + "itea");
+        File dir = new File("src" + File.separator + "com" +File.separator + "itea" + File.separator + "dimka" + File.separator + "lection16");
         if (dir.exists() && dir.isDirectory()){
             System.out.println("dir " + dir.getName() + " exist!");
         }
