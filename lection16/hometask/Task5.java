@@ -31,7 +31,6 @@ public class Task5 {
     }
 
     private void createStudentsFile(File f){
-        System.out.println(System.getProperty("user.home"));
         File dir = new File("data" + File.separator + "data1");
         if(!dir.exists())
             dir.mkdir();
