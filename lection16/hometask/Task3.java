@@ -5,7 +5,7 @@ import java.io.*;
 public class Task3 {
     public static void main(String[] args) {
         File sourceFile = new File("data" + File.separator + "Student1.java");
-        File resultFile = new File("data" + File.separator + "Student2.java");
+        File resultFile = new File("data" + File.separator + "Student2.txt");
 
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(sourceFile));
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFile))){
