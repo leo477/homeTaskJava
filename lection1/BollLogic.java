@@ -1,5 +1,5 @@
 package com.itea.dimka.lection1;
-
+//Comment
 public class BollLogic {
     public static void main(String[] args)
     {
